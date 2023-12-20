@@ -1,3 +1,3 @@
 // fetch yourself an API key from https://portal.1inch.dev/
 // and paste it in the API_KEY const below
-const API_KEY = "your-api-key-here";
+export const API_KEY = "your-api-key-here";
