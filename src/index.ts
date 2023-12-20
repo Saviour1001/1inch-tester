@@ -55,7 +55,7 @@ async function getPrice(
   try {
     const response = await axios.get(url, config);
     const quote = response.data.toAmount;
-    return quote / 10 ** 12;
+    return quote / 10 ** 12; // depends on the decimals of the token
   } catch (error) {
     console.error(error);
   }
@@ -108,7 +108,7 @@ const callData = await getCallData(
   tokenList.nativeToken,
   tokenList.WETH,
   "100",
-  "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+  "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063", // user wallet address
   "1"
 );
 
